@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="js/lib/purl.js"></script>
+        <script src="js/script.js"></script>
+
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <title>Android Tester, from Citrrus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple viewport tester for all Android resolutions">
+        <meta name="author" content="Citrrus, LLC">
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="">Citrrus Android Tester</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a target="_blank" href="http://bitbucket.org/citrrus/android-viewport-tester/src">Git</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.citrrus.com/#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                               
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                    <form class="form-horizontal" action="index.html" method="get">
+                        <div class="control-group">
+                            <label class="" for="appRoot">App Root Url</label>
+                            <input type="text" id="appRoot" name="appRoot" class="input-xlarge" placeholder="Url to your app's root"></input>
+                        </div>
+                        <div class="control-group">
+                            <label class="" for="resolution">Resolution</label>
+                            <select id="resolution" name="resolution">
+                                <option value="240x320">240x320</option>
+                                <option value="240x400">240x400</option>
+                                <option value="240x432">240x432</option>
+                                <option value="320x480">320x480</option>
+                                <option value="480x640">480x640</option>
+                                <option value="480x800">480x800</option>
+                                <option value="480x854">480x854</option>
+                                <option value="600x1024">600x1024</option>
+                                <option value="640x960">640x960</option>
+                                <option value="1024x600">1024x600</option>
+                                <option value="1024x768">1024x768</option>
+                                <option value="1280x768">1280x768</option>
+                                <option value="1280x800">1280x800</option>
+                                <option value="1536x1152">1536x1152</option>
+                                <option value="1920x1152">1920x1152</option>
+                                <option value="1920x1200">1920x1200</option>
+                                <option value="2048x1536">2048x1536</option>
+                                <option value="2560x1536">2560x1536</option>
+                                <option value="2560x1600">2560x1600</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <label class="" for="landscape">Landscape</label>
+                            <input type="checkbox" id="landscape" name="landscape">
+                        </div>
+                        <div class="control-group">
+                            <input class="btn btn-primary" id="refresh" type="button" value="Refresh" />
+                        </div>
+                    </form>
+                </div>
+                <div class="span10">
+                    <div class="">
+                        <input type="text" class="input-xxlarge" readonly id="iframeUrl"></input>
+                    </div>
+                    <div>
+                        <div id="deviceContainer">
+                            <iframe id="device" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
