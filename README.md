@@ -1,5 +1,5 @@
 android-viewport-tester
 =======================
 
-A simple tester for testing your web app at all of the Android device resolutions.
+A simple site for testing your web app on different Android device resolutions.
 
