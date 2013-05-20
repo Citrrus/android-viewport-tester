@@ -14,9 +14,6 @@ $ ->
 
         false
 
-    updateUrl = ->
-        $("#iframeUrl").val document.getElementById("device").contentWindow.location.href
-
     processParams = ->
         url = $.url(window.location.href)
 
@@ -36,8 +33,6 @@ $ ->
 
     pushState = ->
         history.pushState "", "", "index.html?#{$("form").serialize()}"        
-
-    setInterval updateUrl, 500
 
     $("#resolution").change ->
         updateResolution()
