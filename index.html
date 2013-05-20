@@ -1,19 +1,19 @@
 <html>
     <head>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <script src="js/lib/purl.js"></script>
-        <script src="js/script.js"></script>
-
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
         <meta charset="utf-8">
         <title>Android Tester, from Citrrus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A simple viewport tester for all Android resolutions">
         <meta name="author" content="Citrrus, LLC">
 
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/lib/purl.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,9 +39,16 @@
                 </div> 
             </div>
         </div>
+        <a id="forkOnGithub" href="https://github.com/citrrus/android-viewport-tester">
+            <img 
+                style="position: absolute; top: 0; right: 0; border: 0; z-index:2000;" 
+                src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+                alt="Fork me on GitHub"
+                />
+        </a>
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="span2">
+                <div class="span4">
                     <form class="form-horizontal" action="index.html" method="get">
                         <div class="control-group">
                             <label class="" for="appRoot">App Root Url</label>
@@ -80,7 +87,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="span10">
+                <div class="span8">
                     <div class="">
                         <input type="text" class="input-xxlarge" readonly id="iframeUrl"></input>
                     </div>
