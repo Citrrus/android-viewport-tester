@@ -27,10 +27,6 @@ $ ->
         device.attr "src", $("#appRoot").val()
         pushState()
 
-    refreshIFrame = ->
-        device = $("#device")[0]
-        device.contentWindow.location.reload true
-
     pushState = ->
         history.pushState "", "", "index.html?#{$("form").serialize()}"        
 
@@ -46,7 +42,7 @@ $ ->
         updateiFrameUrl()
         pushState()
 
-    $("#refresh").click refreshIFrame
+    $("#refresh").click updateiFrameUrl
 
     processParams()
     updateResolution()
